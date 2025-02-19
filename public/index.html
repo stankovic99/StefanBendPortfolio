@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Slavkovic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+    <nav id="navbar" class="fixed bg-gray-900 top-0 w-full z-50 text-gray-200 navbar">
+        <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4 ">
+            <a href="#home"><img src="img/logo.png" alt="Logo" srcset=""></img></a>
+
+            <ul class="hidden md:flex uppercase font-light tracking-widest space-x-6">
+                <li><a href="#home" class="px-4 py-2">Home</a></li>
+                <li><a href="#about" class="px-4 py-2">About</a></li>
+                <li><a href="#portfolio" class="px-4 py-2">Portfolio</a></li>
+            </ul>
+
+            <a href="#contact" class="hidden md:inline-block btn-primary hover:bg-gray-100 hover:text-gray-950 border-1 hover:border-gray-950 hover:font-medium">Contact</a>
+
+            <button id="hamburger" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8" xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <ul id="mobile-menu" class="absolute  top-16 left-0 w-full bg-gray-900 text-white text-center space-y-4 py-6 hidden md:hidden">
+            <li><a href="#home" class="block px-4 py-2">Home</a></li>
+            <li><a href="#about" class="block px-4 py-2">About</a></li>
+            <li><a href="portfolio.html" class="block px-4 py-2">Portfolio</a></li>
+            <li><a href="portfolio.html" class="block px-4 py-2">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero section -->
+    <section id="home" class="relative flex items-center justify-center h-screen bg-cover bg-center bg-fixed sm:bg-[center_10%] md:bg-[center_0] lg:bg-[center_-10rem] xl:bg-[center_-35rem]" style="background-image: url('./img/myImage.jpg');">
+        <div class="absolute inset-0 bg-black opacity-70"></div> 
+        <div class="relative z-10 text-center max-w-screen-xl mx-auto px-6">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold">
+                <!-- Bringing Ideas to Life with <span class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Design</span> -->
+                Bringing Ideas to Life with Design
+            </h1>
+            <p class="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl text-gray-200 font-extralight">
+                I’m a passionate graphic designer who turns concepts into visually stunning creations
+            </p>
+            <div class="mt-16 sm:mt-24 flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 items-center">
+                <a href="#contact" class="btn-primary hover:bg-gray-100 hover:text-gray-950 border hover:border-gray-950 hover:font-medium hover:scale-105">
+                    Get in Touch
+                </a>
+                <a href="./files/ResumeStefan.pdf" download class="flex items-center gap-2.5 justify-center btn-secondary hover:scale-105">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m-6-6l6 6 6-6" />
+                    </svg>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-screen-xl mx-auto px-6 py-20 lg:py-32">
+        <div class="flex flex-col md:flex-row items-center gap-24">
+            <!-- Left Column - Image -->
+            <div class="w-full md:w-1/2">
+                <img src="./img/myself.jpg" alt="My Photo" class="w-full rounded-lg shadow-lg">
+            </div>
+    
+            <!-- Right Column - Text -->
+            <div class="w-full md:w-1/2 text-dark">
+                <p class="text-lg text-gray-500 font-lato uppercase tracking-wide font-light">About Me</p>
+                <h2 class="text-4xl font-playfair font-bold text-gray-900 mt-2">Who am I?</h2>
+                <p class="text-lg text-gray-700 font-lato mt-4 leading-relaxed">
+                    Highly creative Graphic Designer and Illustrator with an eye for aesthetics and visual 
+                    presentation. Three years of experience creating designs for publishing houses, with most of
+                    my work involving book covers, logo design, poster design, children's illustrations, and
+                    e-books. Versatile designer and collaborative team player who can diversify design styles
+                    to fit client needs and specifications.
+                </p>
+    
+                <!-- Skills Section -->
+                <div class="mt-8 md:mt-16">
+                    <h3 class="text-2xl font-playfair font-semibold text-gray-900">Skills</h3>
+                    <ul class="mt-3 grid grid-cols-2 gap-4 text-lg text-gray-700 font-lato">
+                        <li>🎨 Graphic Design</li>
+                        <li>🖋️ Illustration</li>
+                        <li>📚 Book Cover Design</li>
+                        <li>🎭 Logo & Branding</li>
+                        <li>🖌️ Photoshop</li> 
+                        <li>📜 Typography</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-lato text-gray-500 uppercase tracking-wider">Portfolio</p>
+            <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-10 mt-2">My Work</h2>
+            
+            <div class="max-w-screen-xl mx-auto px-16">
+                <div class="vertical-slider">
+                    <img src="./img/vertical1.png" alt="Work 1" class="rounded-lg mx-2">
+                    <img src="./img/vertical2.png" alt="Work 2" class="rounded-lg mx-2">
+                    <img src="./img/vertical3.png" alt="Work 3" class="rounded-lg mx-2">
+                    <img src="./img/vertical4.png" alt="Work 4" class="rounded-lg mx-2">
+                    <img src="./img/vertical5.png" alt="Work 5" class="rounded-lg mx-2">
+                    <img src="./img/vertical6.png" alt="Work 6" class="rounded-lg mx-2">
+                    <img src="./img/vertical7.png" alt="Work 7" class="rounded-lg mx-2">
+                    <img src="./img/vertical8.png" alt="Work 8" class="rounded-lg mx-2">
+                    <img src="./img/vertical9.png" alt="Work 9" class="rounded-lg mx-2">
+                    <img src="./img/vertical10.png" alt="Work 10" class="rounded-lg mx-2">
+                    <img src="./img/vertical11.png" alt="Work 11" class="rounded-lg mx-2">
+                </div>
+            </div>
+    
+            <!-- Horizontal Slider -->
+            <div class="relative max-w-screen-xl mx-auto mt-16">
+                <div class="horizontal-slider ">
+                    <img src="./img/horizontal1.png" alt="Work 1" class="rounded-lg shadow-lg">
+                    <img src="./img/horizontal2.png" alt="Work 2" class="rounded-lg shadow-lg">
+                    <img src="./img/horizontal3.png" alt="Work 3" class="rounded-lg shadow-lg">
+                    <img src="./img/horizontal4.png" alt="Work 4" class="rounded-lg shadow-lg">
+                    <img src="./img/horizontal5.png" alt="Work 4" class="rounded-lg shadow-lg">
+                </div>
+                <!-- Arrows for Horizontal Slider -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full horizontal-prev">
+                    ❮
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full horizontal-next">
+                    ❯
+                </button>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-white py-20 lg:py-32">
+    <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <div>
+            <p class="text-lg font-lato text-gray-500 uppercase tracking-wider">Contact Me</p>
+            <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-10 mt-2">Get in Touch</h2>
+
+            <div class="mt-6 space-y-4 text-gray-700">
+                <p>📧 Email: <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">your.email@example.com</a></p>
+                <p>📞 Phone: <a href="tel:+1234567890" class="text-blue-500 hover:underline">+123 456 7890</a></p>
+                <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 hover:underline">linkedin.com/in/yourprofile</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <form action="contact.php" method="POST" class="space-y-6">
+            
+            <!-- Name Input -->
+            <div class="relative">
+                <input type="text" name="name" id="name" required
+                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none">
+                <label for="name"
+                    class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
+                    Name
+                </label>
+            </div>
+
+            <!-- Email Input -->
+            <div class="relative">
+                <input type="email" name="email" id="email" required
+                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none">
+                <label for="email"
+                    class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
+                    Email
+                </label>
+            </div>
+
+            <!-- Message Input -->
+            <div class="relative">
+                <textarea name="message" id="message" required rows="5"
+                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"></textarea>
+                <label for="message"
+                    class="absolute left-4 top-[-2] text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
+                    Message
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-all">
+                Send Message
+            </button>
+
+        </form>
+    </div>
+</section>
+
+
+
+    <footer class="bg-gray-900 text-gray-400 py-5">
+        <div class="text-center text-sm">
+            &copy; 2025 Stefan Slavkovic. All rights reserved.
+        </div>
+    </footer>
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.vertical-slider').slick({
+                slidesToScroll: 1,
+                dots:true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                lazyLoad: 'ondemand',
+                infinite: true,
+                adaptiveHeight: true,
+                centerMode: true,
+                variableWidth: true,
+                focusOnSelect: true,
+                arrows:false,
+                responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 3 }},
+                    { breakpoint: 768, settings: { slidesToShow: 2 }},
+                    { breakpoint: 480, settings: { slidesToShow: 1 }}
+                ]
+            });
+
+            // Horizontal Slider
+            $('.horizontal-slider').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                arrows: true,
+                prevArrow: $('.horizontal-prev'),
+                nextArrow: $('.horizontal-next'),
+                responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 2 }},
+                    { breakpoint: 768, settings: { slidesToShow: 1 }}
+                ]
+            });
+        });
+        
+        const navbar = document.getElementById("navbar");
+
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
