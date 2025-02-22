@@ -3,7 +3,7 @@
 .env.local
 .env.development
 .env.production
-.env.* # Ignore all .env files with any suffix
+.env.*
 
 # Ignore node_modules (if using Node.js)
 node_modules/
