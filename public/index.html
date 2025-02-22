@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 <body>
-    <nav id="navbar" class="fixed bg-gray-900 top-0 w-full z-50 text-gray-200 navbar">
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900 text-gray-200 transition-transform duration-300 navbar">
+
         <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4 ">
-            <a href="#home"><img src="img/logo.png" alt="Logo" srcset=""></img></a>
+            <a href="#home"><img src="img/logoWhite.png" alt="Logo" srcset=""></img></a>
 
             <ul class="hidden md:flex uppercase font-light tracking-widest space-x-6">
-                <li><a href="#home" class="px-4 py-2">Home</a></li>
-                <li><a href="#about" class="px-4 py-2">About</a></li>
-                <li><a href="#portfolio" class="px-4 py-2">Portfolio</a></li>
-            </ul>
-
-            <a href="#contact" class="hidden md:inline-block btn-primary hover:bg-gray-100 hover:text-gray-950 border-1 hover:border-gray-950 hover:font-medium">Contact</a>
+                <li><a href="#home" class="px-4 py-2 hover:underline hover:underline-offset-6">Home</a></li>
+                <li><a href="#about" class="px-4 py-2 hover:underline hover:underline-offset-6">About</a></li>
+                <li><a href="#portfolio" class="px-4 py-2 hover:underline hover:underline-offset-6">Portfolio</a></li>
+            </ul> 
+            <a href="#contact" class="hidden md:inline-block btn-primary py-2 hover:bg-gray-100 hover:text-gray-950 border-1 hover:border-gray-950 hover:font-medium">Contact</a>
 
             <button id="hamburger" class="md:hidden focus:outline-none">
                 <svg class="w-8 h-8" xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -27,12 +27,11 @@
                 </svg>
             </button>
         </div>
-
-        <ul id="mobile-menu" class="absolute  top-16 left-0 w-full bg-gray-900 text-white text-center space-y-4 py-6 hidden md:hidden">
-            <li><a href="#home" class="block px-4 py-2">Home</a></li>
-            <li><a href="#about" class="block px-4 py-2">About</a></li>
-            <li><a href="portfolio.html" class="block px-4 py-2">Portfolio</a></li>
-            <li><a href="portfolio.html" class="block px-4 py-2">Contact</a></li>
+        <ul id="mobile-menu" class="absolute uppercase tracking-widest top-16 left-0 w-full bg-gray-900 text-white text-center hidden md:hidden">
+            <li><a href="#home" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Home</a></li>
+            <li><a href="#about" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">About</a></li>
+            <li><a href="#portfolio" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Portfolio</a></li>
+            <li><a href="#contact" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Contact</a></li>
         </ul>
     </nav>
     
@@ -40,18 +39,20 @@
     <section id="home" class="relative flex items-center justify-center h-screen bg-cover bg-center bg-fixed sm:bg-[center_10%] md:bg-[center_0] lg:bg-[center_-10rem] xl:bg-[center_-35rem]" style="background-image: url('./img/myImage.jpg');">
         <div class="absolute inset-0 bg-black opacity-70"></div> 
         <div class="relative z-10 text-center max-w-screen-xl mx-auto px-6">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold">
-                <!-- Bringing Ideas to Life with <span class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Design</span> -->
-                Bringing Ideas to Life with Design
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold">  
+                Bringing Ideas to Life with <span class="bg-gradient-to-r from-blue-500 to-blue-400 text-transparent bg-clip-text">Design</span>
             </h1>
             <p class="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl text-gray-200 font-extralight">
-                I’m a passionate graphic designer who turns concepts into visually stunning creations
+                I'm a passionate graphic designer who turns concepts into visually stunning creations
             </p>
             <div class="mt-16 sm:mt-24 flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 items-center">
-                <a href="#contact" class="btn-primary hover:bg-gray-100 hover:text-gray-950 border hover:border-gray-950 hover:font-medium hover:scale-105">
-                    Get in Touch
+                <a href="#contact" class="btn-primary flex items-center gap-2.5 justify-center hover:bg-gray-100 hover:text-gray-950 border hover:border-gray-950 hover:font-medium hover:scale-105 w-full md:w-auto">
+                    <svg class="w-6 h-6" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"></path>
+                    </svg>
+                    <span>Get in Touch</span>
                 </a>
-                <a href="./files/ResumeStefan.pdf" download class="flex items-center gap-2.5 justify-center btn-secondary hover:scale-105">
+                <a href="./files/ResumeStefan.pdf" download class="flex items-center gap-2.5 justify-center btn-secondary w-full md:w-auto hover:scale-105">
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m-6-6l6 6 6-6" />
                     </svg>
@@ -64,15 +65,13 @@
     <!-- About Section -->
     <section id="about" class="max-w-screen-xl mx-auto px-6 py-20 lg:py-32">
         <div class="flex flex-col md:flex-row items-center gap-24">
-            <!-- Left Column - Image -->
-            <div class="w-full md:w-1/2">
+            <div class="w-full md:w-1/2 transform opacity-0 -translate-x-20 transition-all duration-1000 about-left">
                 <img src="./img/myself.jpg" alt="My Photo" class="w-full rounded-lg shadow-lg">
             </div>
     
-            <!-- Right Column - Text -->
-            <div class="w-full md:w-1/2 text-dark">
-                <p class="text-lg text-gray-500 font-lato uppercase tracking-wide font-light">About Me</p>
-                <h2 class="text-4xl font-playfair font-bold text-gray-900 mt-2">Who am I?</h2>
+            <div class="w-full md:w-1/2 text-dark transform opacity-0 translate-x-20 transition-all duration-1000 about-right">
+                <p class="sub-heading">About Me</p>
+                <h2 class="main-heading">Who am I?</h2>
                 <p class="text-lg text-gray-700 font-lato mt-4 leading-relaxed">
                     Highly creative Graphic Designer and Illustrator with an eye for aesthetics and visual 
                     presentation. Three years of experience creating designs for publishing houses, with most of
@@ -80,11 +79,10 @@
                     e-books. Versatile designer and collaborative team player who can diversify design styles
                     to fit client needs and specifications.
                 </p>
-    
-                <!-- Skills Section -->
+                
                 <div class="mt-8 md:mt-16">
-                    <h3 class="text-2xl font-playfair font-semibold text-gray-900">Skills</h3>
-                    <ul class="mt-3 grid grid-cols-2 gap-4 text-lg text-gray-700 font-lato">
+                    <h3 class="text-3xl font-playfair font-semibold text-gray-900">Skills</h3>
+                    <ul class="mt-4 grid grid-cols-2 gap-4 text-lg text-gray-700 font-lato">
                         <li>🎨 Graphic Design</li>
                         <li>🖋️ Illustration</li>
                         <li>📚 Book Cover Design</li>
@@ -97,158 +95,237 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <p class="text-lg font-lato text-gray-500 uppercase tracking-wider">Portfolio</p>
-            <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-10 mt-2">My Work</h2>
-            
-            <div class="max-w-screen-xl mx-auto px-16">
+    <!-- Portfolio section -->
+    <section id="portfolio" class=" relative py-20 text-white ">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 animate-pulseSlow"></div>
+        <div class="relative mx-auto text-center">
+            <p class="sub-heading">Portfolio</p>
+            <h2 class="main-heading">My Work</h2>
+            <div class="relative max-w-screen-xl mx-auto mt-12">
                 <div class="vertical-slider">
-                    <img src="./img/vertical1.png" alt="Work 1" class="rounded-lg mx-2">
-                    <img src="./img/vertical2.png" alt="Work 2" class="rounded-lg mx-2">
-                    <img src="./img/vertical3.png" alt="Work 3" class="rounded-lg mx-2">
-                    <img src="./img/vertical4.png" alt="Work 4" class="rounded-lg mx-2">
-                    <img src="./img/vertical5.png" alt="Work 5" class="rounded-lg mx-2">
-                    <img src="./img/vertical6.png" alt="Work 6" class="rounded-lg mx-2">
-                    <img src="./img/vertical7.png" alt="Work 7" class="rounded-lg mx-2">
-                    <img src="./img/vertical8.png" alt="Work 8" class="rounded-lg mx-2">
-                    <img src="./img/vertical9.png" alt="Work 9" class="rounded-lg mx-2">
-                    <img src="./img/vertical10.png" alt="Work 10" class="rounded-lg mx-2">
-                    <img src="./img/vertical11.png" alt="Work 11" class="rounded-lg mx-2">
+                    <img src="./img/vertical1.png" alt="Work 1" class="mx-4">
+                    <img src="./img/vertical2.png" alt="Work 2" class="mx-4">
+                    <img src="./img/vertical3.png" alt="Work 3" class="mx-4">
+                    <img src="./img/vertical4.png" alt="Work 4" class="mx-4">
+                    <img src="./img/vertical5.png" alt="Work 5" class="mx-4">
+                    <img src="./img/vertical6.png" alt="Work 6" class="mx-4">
+                    <img src="./img/vertical7.png" alt="Work 7" class="mx-4">
+                    <img src="./img/vertical8.png" alt="Work 8" class="mx-4">
+                    <img src="./img/vertical9.png" alt="Work 9" class="mx-4">
+                    <img src="./img/vertical10.png" alt="Work 10" class="mx-4">
+                    <img src="./img/vertical11.png" alt="Work 11" class="mx-4">
+                    <img src="./img/vertical12.png" alt="Work 12" class="mx-4">
                 </div>
+                <button class="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full vertical-prev hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="h-5 w-5 md:w-10 md:h-10" data-slot="icon" fill="#11111" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                      </svg>
+                </button>
+                <button class="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full vertical-next hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="w-5 h-5 md:w-10 md:h-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                      </svg>
+                </button>
             </div>
-    
-            <!-- Horizontal Slider -->
-            <div class="relative max-w-screen-xl mx-auto mt-16">
-                <div class="horizontal-slider ">
-                    <img src="./img/horizontal1.png" alt="Work 1" class="rounded-lg shadow-lg">
-                    <img src="./img/horizontal2.png" alt="Work 2" class="rounded-lg shadow-lg">
-                    <img src="./img/horizontal3.png" alt="Work 3" class="rounded-lg shadow-lg">
-                    <img src="./img/horizontal4.png" alt="Work 4" class="rounded-lg shadow-lg">
-                    <img src="./img/horizontal5.png" alt="Work 4" class="rounded-lg shadow-lg">
+            
+            <div class="relative max-w-screen-xl mx-auto mt-12">
+                <div class="horizontal-slider">
+                    <img src="./img/horizontal1.png" alt="Work 1" class="mx-4">
+                    <img src="./img/horizontal2.png" alt="Work 2" class="mx-4">
+                    <img src="./img/horizontal3.png" alt="Work 3" class="mx-4">
+                    <img src="./img/horizontal4.png" alt="Work 4" class="mx-4">
+                    <img src="./img/horizontal5.png" alt="Work 5" class="mx-4">
                 </div>
-                <!-- Arrows for Horizontal Slider -->
-                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full horizontal-prev">
-                    ❮
+                <button class="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full horizontal-prev hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="h-5 w-5 md:w-10 md:h-10" data-slot="icon" fill="#11111" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                      </svg>
                 </button>
-                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full horizontal-next">
-                    ❯
+                <button class="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full horizontal-next hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="w-5 h-5 md:w-10 md:h-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                      </svg>
                 </button>
+            </div>
+            
+            <div class="relative max-w-screen-xl mx-auto mt-12">
+                <h2 class="h3-heading">Sky vibe Menu</h2>
+                <div class="skymenu-slider">
+                    <img src="./img/SkyMenu1.png" alt="Work 1" class="mx-4">
+                    <img src="./img/SkyMenu2.png" alt="Work 2" class="mx-4">
+                    <img src="./img/SkyMenu3.png" alt="Work 3" class="mx-4">
+                    <img src="./img/SkyMenu4.png" alt="Work 4" class="mx-4">
+                    <img src="./img/SkyMenu5.png" alt="Work 6" class="mx-4">
+                    <img src="./img/SkyMenu6.png" alt="Work 5" class="mx-4">
+                </div>
+                <button class="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full skymenu-prev hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="h-5 w-5 md:w-10 md:h-10" data-slot="icon" fill="#11111" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                      </svg>
+                </button>
+                <button class="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full skymenu-next hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="w-5 h-5 md:w-10 md:h-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                      </svg>
+                </button>
+            </div>
+            
+            <div class="relative max-w-screen-xl mx-auto mt-12">
+                <h2 class="h3-heading">Italian Coffee Menu</h2>
+                <div class="italiancoffee-slider ">
+                    <img src="./img/ItalianCoffee1.png" alt="Work 1" class="mx-4">
+                    <img src="./img/ItalianCoffee2.png" alt="Work 2" class="mx-4">
+                    <img src="./img/ItalianCoffee3.png" alt="Work 3" class="mx-4">
+                    <img src="./img/ItalianCoffee4.png" alt="Work 4" class="mx-4">
+                    <img src="./img/ItalianCoffee5.png" alt="Work 5" class="mx-4">
+                    <img src="./img/ItalianCoffee6.png" alt="Work 6" class="mx-4">
+                    <img src="./img/ItalianCoffee7.png" alt="Work 7" class="mx-4">
+                    <img src="./img/ItalianCoffee8.png" alt="Work 8" class="mx-4">
+                    <img src="./img/ItalianCoffee9.png" alt="Work 9" class="mx-4">
+                    <img src="./img/ItalianCoffee10.png" alt="Work 10" class="mx-4">
+                    <img src="./img/ItalianCoffee12.png" alt="Work 12" class="mx-4">
+                    <img src="./img/ItalianCoffee13.png" alt="Work 13" class="mx-4">
+                </div>
+                <button class="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full italiancoffee-prev hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="h-5 w-5 md:w-10 md:h-10" data-slot="icon" fill="#11111" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                      </svg>
+                </button>
+                <button class="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full italiancoffee-next hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="w-5 h-5 md:w-10 md:h-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                      </svg>
+                </button>
+            </div>
+            
+            <div class="relative max-w-screen-xl mx-auto mt-12">
+                <h2 class="h3-heading">Macedonian Strip</h2>
+                <div class="strip-slider ">
+                    <img src="./img/Strip1.png" alt="Work 1" class="mx-4">
+                    <img src="./img/Strip2.png" alt="Work 2" class="mx-4">
+                    <img src="./img/Strip3.png" alt="Work 3" class="mx-4">
+                    <img src="./img/Strip4.png" alt="Work 4" class="mx-4">
+                    <img src="./img/Strip5.png" alt="Work 5" class="mx-4">
+                    <img src="./img/Strip6.png" alt="Work 6" class="mx-4">
+                    <img src="./img/Strip7.png" alt="Work 7" class="mx-4">
+                    <img src="./img/Strip8.png" alt="Work 8" class="mx-4">
+                    <img src="./img/Strip9.png" alt="Work 9" class="mx-4">
+                    <img src="./img/Strip10.png" alt="Work 10" class="mx-4">
+                    <img src="./img/Strip11.png" alt="Work 11" class="mx-4">
+                    <img src="./img/Strip12.png" alt="Work 12" class="mx-4">
+                    <img src="./img/Strip13.png" alt="Work 13" class="mx-4">
+                    <img src="./img/Strip14.png" alt="Work 14" class="mx-4">
+                    <img src="./img/Strip15.png" alt="Work 15" class="mx-4">
+                    <img src="./img/Strip16.png" alt="Work 16" class="mx-4">
+                    <img src="./img/Strip17.png" alt="Work 17" class="mx-4">
+                    <img src="./img/Strip18.png" alt="Work 18" class="mx-4">
+                    <img src="./img/Strip19.png" alt="Work 19" class="mx-4">
+                </div>
+                <button class="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full strip-prev hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="h-5 w-5 md:w-10 md:h-10" data-slot="icon" fill="#11111" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                      </svg>
+                </button>
+                <button class="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full strip-next hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <svg class="w-5 h-5 md:w-10 md:h-10" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                      </svg>
+                </button>
+            </div>
+
+            <div class="max-w-screen-xl mx-auto mt-12">
+                <h2 class="h3-heading">TravelX Poster</h2>
+                <img class="px-4" src="./img/travel.png" alt="Travel">
+            </div>
         </div>
     </section>
 
-
+    <!-- Contact Section -->
     <section id="contact" class="bg-white py-20 lg:py-32">
-    <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-
-        <div>
-            <p class="text-lg font-lato text-gray-500 uppercase tracking-wider">Contact Me</p>
-            <h2 class="text-4xl font-playfair font-bold text-gray-800 mb-10 mt-2">Get in Touch</h2>
-
-            <div class="mt-6 space-y-4 text-gray-700">
-                <p>📧 Email: <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">your.email@example.com</a></p>
-                <p>📞 Phone: <a href="tel:+1234567890" class="text-blue-500 hover:underline">+123 456 7890</a></p>
-                <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 hover:underline">linkedin.com/in/yourprofile</a></p>
+        <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-800">
+            <div>
+                <p class="sub-heading">Contact Me</p>
+                <h2 class="main-heading">Get in Touch</h2>            
+                <div class="mt-12 space-y-4 text-gray-700">
+                    <div class="flex items-center space-x-3">
+                        <img src="img/email.png" alt="email">
+                        <p class="tracking-wider text-md">Email: 
+                            <a href="mailto:stefanslavkovic50@hotmail.com" class="font-bold hover:underline">
+                                stefanslavkovic50@hotmail.com
+                            </a>
+                        </p>
+                    </div>            
+                    <div class="flex items-center space-x-3">
+                        <img src="img/phone.png" alt="phone" class="w-6 h-6">
+                        <p class="tracking-wider">Phone: 
+                            <a href="tel:+38976206664" class="font-bold hover:underline">
+                                +389 76 206 664
+                            </a>
+                        </p>
+                    </div>            
+                    <div class="flex items-center space-x-3">
+                        <img src="img/location.png" alt="location" class="w-6 h-6">
+                        <p class="tracking-wider text-md">Location: 
+                            <a href="https://www.google.com/maps/place/Skopje,+North+Macedonia" target="_blank" class="font-bold hover:underline">
+                                Skopje, North Macedonia
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form id="contactForm" action="contact.php" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block pb-2">Name</label>
+                        <input type="text" name="name" id="name" required
+                            class="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-2 focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none"
+                            placeholder="e.g., John Doe">
+                    </div>            
+                    <div>
+                        <label for="email" class="block pb-2">Email</label>
+                        <input type="email" name="email" id="email" required
+                            class="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-2 focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none"
+                            placeholder="e.g., johndoe@example.com">
+                    </div>            
+                    <div>
+                        <label for="message" class="block  pb-2">Message</label>
+                        <textarea name="message" id="message" required rows="5"
+                            class="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-2 focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none"
+                            placeholder="Write your message here..."></textarea>
+                    </div>            
+                    <button type="submit" class="btn-primary w-full md:w-auto font-medium hover:bg-gray-200 tracking-widest bg-transparent text-gray-900  transition-all">
+                        Send Message
+                    </button>
+                </form>            
+                <p id="responseMessage" class="mt-4 text-lg text-center font-semibold transition-all duration-300"></p>
             </div>
         </div>
-
-        <!-- Right Side: Contact Form -->
-        <form action="contact.php" method="POST" class="space-y-6">
-            
-            <!-- Name Input -->
-            <div class="relative">
-                <input type="text" name="name" id="name" required
-                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none">
-                <label for="name"
-                    class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
-                    Name
-                </label>
-            </div>
-
-            <!-- Email Input -->
-            <div class="relative">
-                <input type="email" name="email" id="email" required
-                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none">
-                <label for="email"
-                    class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
-                    Email
-                </label>
-            </div>
-
-            <!-- Message Input -->
-            <div class="relative">
-                <textarea name="message" id="message" required rows="5"
-                    class="peer w-full border border-gray-300 rounded-lg px-4 pt-5 pb-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"></textarea>
-                <label for="message"
-                    class="absolute left-4 top-[-2] text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
-                    Message
-                </label>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit"
-                class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-all">
-                Send Message
-            </button>
-
-        </form>
-    </div>
-</section>
-
-
-
+    </section>
+    
     <footer class="bg-gray-900 text-gray-400 py-5">
-        <div class="text-center text-sm">
-            &copy; 2025 Stefan Slavkovic. All rights reserved.
+        <div class="flex flex-col md:flex-row md:justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+            <div class="text-sm">&copy; 2025 Stefan Slavkovic. All rights reserved.</div>            
+            <div class="flex space-x-6">
+                <a href="https://www.facebook.com/stefanslavkovic.1998" target="_blank" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V15.47H7.898v-3.47h2.54V9.845c0-2.506 1.492-3.89 3.775-3.89 1.096 0 2.24.195 2.24.195v2.46h-1.262c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 3.47h-2.33v6.408C18.344 21.128 22 16.991 22 12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/stefanslavkovic?igsh=MXBqdmk0M3VpMDRrYg==" target="_blank" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/stefan-slavkovic-340ba4210/" target="_blank" class="hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
-        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('.vertical-slider').slick({
-                slidesToScroll: 1,
-                dots:true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                lazyLoad: 'ondemand',
-                infinite: true,
-                adaptiveHeight: true,
-                centerMode: true,
-                variableWidth: true,
-                focusOnSelect: true,
-                arrows:false,
-                responsive: [
-                    { breakpoint: 1024, settings: { slidesToShow: 3 }},
-                    { breakpoint: 768, settings: { slidesToShow: 2 }},
-                    { breakpoint: 480, settings: { slidesToShow: 1 }}
-                ]
-            });
-
-            // Horizontal Slider
-            $('.horizontal-slider').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                infinite: true,
-                arrows: true,
-                prevArrow: $('.horizontal-prev'),
-                nextArrow: $('.horizontal-next'),
-                responsive: [
-                    { breakpoint: 1024, settings: { slidesToShow: 2 }},
-                    { breakpoint: 768, settings: { slidesToShow: 1 }}
-                ]
-            });
-        });
-        
-        const navbar = document.getElementById("navbar");
-
-        document.getElementById("hamburger").addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

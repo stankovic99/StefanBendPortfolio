@@ -16,13 +16,30 @@
 }
 
 @layer components {
+  .sub-heading{
+    @apply text-lg text-gray-500 font-lato uppercase tracking-wide font-light;
+  }
+  .main-heading{
+    @apply text-4xl md:text-5xl font-playfair font-bold text-gray-900 mt-2;
+  }
+  .h3-heading{
+    @apply text-3xl md:text-4xl font-playfair font-bold text-gray-900 mt-2 mb-5;
+  }
   .btn-primary {
-      @apply px-10 py-2 border-1 rounded-full text-white uppercase font-light tracking-widest transition duration-300;
+      @apply px-12 py-3 border-1 rounded-full text-white uppercase font-light tracking-widest transition duration-300;
   }
   .btn-secondary{
-    @apply px-10 py-2 border-1 rounded-full text-gray-950 uppercase tracking-widest transition duration-300 bg-gray-100 ;
+    @apply px-12 py-3 border-1 rounded-full text-gray-950 uppercase tracking-widest transition duration-300 bg-gray-100 ;
   }
-  .input {
-      @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+@layer utilities {
+  @keyframes pulseSlow {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+  }
+
+  .animate-pulseSlow {
+      @apply animate-[pulseSlow_6s_infinite_alternate_ease-in-out];
   }
 }
